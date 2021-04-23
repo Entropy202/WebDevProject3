@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Time Agent - Game Page
+        </title>
+        <!--Link to Style sheet-->
+        <link rel="stylesheet" href="..\stylesheet.css">
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <div class="navbar">
+            <a style="float: left; border-style: none;" href="..\index.html">
+                <img src="..\Images\clock.png" alt="Home Button" style="width:100px;height:100px; border-style: outset;">
+            </a>
+            <a href="..\Webpages\AboutPage.html"><h1>About this Site</h1></a>
+        </div>
+
+        <div class="helpmenu">Help Menu
+            <span class="helpmenutext">You were just deciding between whether to grab a uniform for a disguise or wander around the facility
+                like you belong there - you chose the former - probably a smarter choice. But what's next?<br>
+            <br>To proceed press either the "1" key or the "2" key on your keyboard (depending on your choice)
+            </span>
+          </div>
+
+
+        <section class="center" style="padding-top: 50px;">
+            <div class="container">
+                    <img src="..\Images\disguise.jpg" alt="Disguise" style="width:300px;height:300px;border-style: inset;">
+                    <p style="padding-left: 30px;">
+                        You head over and grab the uniform that somebody has just left lying there. You quickly use your secret agent dexterity to
+                        put it on and begin to think of a character to play in case somebody bumps in to you. You notice some facility scientists and guards
+                        standing around chatting by the water cooler...<br>
+
+                        <br> The way you see things, you have two options: you could head over to the facility employees and attempt to gain some information on where this 
+                        device is being held OR, you can head off on your own and try to find it:
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="center" style="padding-bottom: 50px;">
+            <div class="grid-options">
+                <div class="grid-content">(1) Watercooler Talk</div>
+                <div class="grid-content">(2) Wander almost aimlessly</div>
+              </div>
+        </section>  
+
+        <script>
+            document.body.addEventListener("keydown", function (event) {
+                if (event.keyCode === 49) {
+                    window.location.replace("DeathWatercooler.html");
+                }
+                if(event.keyCode === 50) {
+                    window.location.replace("5Labs.html");
+                }
+            });
+        </script>
+
+
+        <footer class="navbar">
+            <a href="StartGame.html"><h1>Restart Adventure</h1></a>
+        </footer>
+
+    </body>
+</html>

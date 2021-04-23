@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Time Agent - Game Page
+        </title>
+        <!--Link to Style sheet-->
+        <link rel="stylesheet" href="..\stylesheet.css">
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <div class="navbar">
+            <a style="float: left; border-style: none;" href="..\index.html">
+                <img src="..\Images\clock.png" alt="Home Button" style="width:100px;height:100px; border-style: outset;">
+            </a>
+            <a href="..\Webpages\AboutPage.html"><h1>About this Site</h1></a>
+        </div>
+
+        <div class="helpmenu">Help Menu
+            <span class="helpmenutext">You were just deciding how you wanted to infiltrate this facility and chose to walk in the back door... and it worked!
+                but what are you going to do next?<br>
+            <br>To proceed press either the "1" key or the "2" key on your keyboard (depending on your choice)
+            </span>
+          </div>
+
+
+        <section class="center" style="padding-top: 50px;">
+            <div class="container">
+                    <img src="..\Images\door.png" alt="Time Spiral" style="width:300px;height:300px;border-style: inset;">
+                    <p style="padding-left: 30px;">
+                        You head round the back of the facility and surprisingly enough there was nobody around to stop you.<br>
+
+                        <br> You make it to the back a find a door wide open, beckoning you to head inside - "this is going to be a breeze" you think to yourself.<br>
+
+                        <br> You make it inside the building and notice a uniform that you could possibily use as a disguise to make your way through the facility
+                        undetected. Alternativley, you have already noticed that this palce isn't so well guarded, maybe you can get away with just wondering around,
+                        pretending that you belong there, I mean, you already made it inside, right?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="center" style="padding-bottom: 50px;">
+            <div class="grid-options">
+                <div class="grid-content">(1) Grab Disguise</div>
+                <div class="grid-content">(2) Have a wander around</div>
+              </div>
+        </section>  
+
+        <script>
+            document.body.addEventListener("keydown", function (event) {
+                if (event.keyCode === 49) {
+                    window.location.replace("3Disguise.html");
+                }
+                if(event.keyCode === 50) {
+                    window.location.replace("DeathWander.html");
+                }
+            });
+        </script>
+
+
+        <footer class="navbar">
+            <a href="StartGame.html"><h1>Restart Adventure</h1></a>
+        </footer>
+
+    </body>
+</html>

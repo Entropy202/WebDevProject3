@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Time Agent - Game Page
+        </title>
+        <!--Link to Style sheet-->
+        <link rel="stylesheet" href="..\stylesheet.css">
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <div class="navbar">
+            <a style="float: left; border-style: none;" href="..\index.html">
+                <img src="..\Images\clock.png" alt="Home Button" style="width:100px;height:100px; border-style: outset;">
+            </a>
+            <a href="..\Webpages\AboutPage.html"><h1>About this Site</h1></a>
+        </div>
+
+        <div class="helpmenu">Help Menu
+            <span class="helpmenutext">You have chosen to call your agency and ask them for some advice on what to do next
+                - surely they have some wisdom for you<br>
+            <br>To proceed press either the "1" key or the "2" key on your keyboard (depending on your choice)
+            </span>
+          </div>
+
+
+        <section class="center" style="padding-top: 50px;">
+            <div class="container">
+                    <img src="..\Images\walkie.png" alt="Walkie Talkie" style="width:400px;height:300px;border-style: inset;">
+                    <p style="padding-left: 30px;">
+                        There is no way you were thinking of calling your mother, right? Of course not - you call your agency.<br>
+
+                        <br>You tell them of the situation you have found yourself in and where you are right now. They inform you
+                        that they have been closely studiying the facility's blueprints further since you left for your mission. They advise
+                        you that the best course of action would be to stand inside the toilet in the third cubicle and flush!<br>
+
+                        <br> They claim that this will take you straight down to the sub-level that the device is being stored and tested on. There 
+                        is no way that is true though, right? They must be having you on.<br>
+
+                        You can either follow their advice OR attempt to grab that disguise you saw earlier and sneak your way down:
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="center" style="padding-bottom: 50px;">
+            <div class="grid-options">
+                <div class="grid-content">(1) Flush Away?!</div>
+                <div class="grid-content">(2) Grab Disguise</div>
+              </div>
+        </section>  
+
+        <script>
+            document.body.addEventListener("keydown", function (event) {
+                if (event.keyCode === 49) {
+                    window.location.replace("5LabToilet.html");
+                }
+                if(event.keyCode === 50) {
+                    window.location.replace("DeathIgnoreAdvice.html");
+                }
+            });
+        </script>
+
+
+        <footer class="navbar">
+            <a href="StartGame.html"><h1>Restart Adventure</h1></a>
+        </footer>
+
+    </body>
+</html>

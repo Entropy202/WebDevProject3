@@ -1,0 +1,99 @@
+/* General page style options*/
+body {
+    background-color: #dce1e3;
+}
+
+p {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+/*Style the Navigation bar at the top*/
+.navbar {
+    overflow: hidden;
+    background-color: #004e7c;
+    border-style: inset;
+    padding: 10px 20px;
+}
+
+/*Style the links within the navigation bar*/
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align:center;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+/*Change colour of links on the navigation bar when hovered over*/
+.navbar a:hover {
+    background-color: #004e7c;
+    opacity: 0.5;
+    color: white;
+}
+
+/*Styling the main body "Sections" of the main page*/
+
+.center {
+    margin:auto;
+    width: 50%
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.grid-options {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #004e7c;
+    padding: 10px;
+  }
+  .grid-content {
+    background-color: #dce1e3;
+    border: 3px solid black;
+    padding: 25px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+
+.helpmenu {
+    position: relative;
+    display: inline-block;
+    border-style:dashed;
+    border-color: #7c0000;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .helpmenu .helpmenutext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #7c0000;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 0;
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+    /* Position the helpmenu */
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 105%;
+  }
+  
+  .helpmenu:hover .helpmenutext {
+    visibility: visible;
+  }

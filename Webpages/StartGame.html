@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Time Agent - Game Start
+        </title>
+        <!--Link to Style sheet-->
+        <link rel="stylesheet" href="..\stylesheet.css">
+    </head>
+    <body>
+
+        <!--Navigation bar-->
+        <div class="navbar">
+            <a style="float: left; border-style: none;" href="..\index.html">
+                <img src="..\Images\clock.png" alt="Home Button" style="width:100px;height:100px; border-style: outset;">
+            </a>
+            <a href="..\Webpages\AboutPage.html"><h1>About this Site</h1></a>
+        </div>
+
+        <div class="helpmenu">Help Menu
+            <span class="helpmenutext">This is the beginning of the mission!<br>
+            <br>You can click "Begin" or press "1" to begin.
+            </span>
+          </div>
+
+        <section class="center" style="padding-top: 50px;">
+            <div class="container">
+                    <img src="..\Images\agent.jpg" alt="Secret Agent" style="width:300px;height:300px;border-style: inset;">
+                    <p style="padding-left: 30px;">
+                        This is the beginning of your mission, Agent. You are required to break into this forgien facility
+                        and ensure that you make it out with the time-travel technology that is housed inside.<br>
+
+                        <br>Remember - as long as you continue to make sensible decisions whilst inside, you will accomplish your mission
+                        successfully - no questions asked. <br>
+
+                        <br>Good luck!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="center" style="display: grid; grid-template-columns: auto; background-color: #004e7c; padding: 10px; margin-bottom: 50px;">
+                <div class="grid-content"><h3>To begin press "1"</h3></div>
+            </div>
+        </section> 
+        
+        <script>
+            document.body.addEventListener("keydown", function (event) {
+                if (event.keyCode === 49) {
+                    window.location.replace("1EnterFacility.html");
+                }
+            });
+        </script>
+
+        <footer class="navbar">
+            <a href="..\index.html"><h1>Return to Main Page</h1></a>
+        </footer>
+
+    </body>
+</html>
